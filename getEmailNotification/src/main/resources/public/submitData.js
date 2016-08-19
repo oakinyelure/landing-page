@@ -4,10 +4,10 @@ $(function(){
 
     $("#getNotified").submit(function(e){
             //input values stored in json format.
-            var dat = {
-                    fullName : $("#fullName").val(),
-                    email : $("#email").val()
-                };
+            var dat = {};
+                    dat.fullName : $("#fullName").val(),
+                    dat.email : $("#email").val()
+                
              //end of data collection
 
            //Ajax to server data transfer took place here
