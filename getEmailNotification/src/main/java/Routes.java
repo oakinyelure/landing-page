@@ -31,13 +31,9 @@ public class Routes {
         }, json());
 
         //Not sure if the method actually works. Not tested yet
-        get("/throwexception", (request, response) -> {
-            throw new ClassNotFoundException();
-        });
-
-        exception(ClassNotFoundException.class, (e, request, response) -> {
-            response.status(404);
-            response.body("We are currently working on this page");
+       
+        exception(Exception.class, (e, request, response) -> {
+           
         });
     }
 }
