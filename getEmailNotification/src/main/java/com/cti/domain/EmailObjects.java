@@ -1,6 +1,5 @@
 package com.cti.domain;
 
-import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
@@ -11,7 +10,6 @@ import org.mongodb.morphia.annotations.Id;
 public class EmailObjects {
 
     @Id
-    private ObjectId id;
     private String email;
     private String fullName;
 

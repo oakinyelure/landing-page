@@ -17,7 +17,7 @@
 <div class="container">
     <header id="top" class="header">
 	<div class="text-vertical-center modal-header">
-  		<h1>Campus Trade In</h1>
+  		<h1>campustradein</h1>
 
 	</div>
     </header>

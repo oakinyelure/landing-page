@@ -13,8 +13,8 @@ import org.mongodb.morphia.Morphia;
 //Method connects to Mongo DB
 public class DbConnection {
 
-    MongoClient databaseLocation = new MongoClient("localhost", 27017);//Address subject to change
-    Datastore beforeLaunch = new Morphia().createDatastore(databaseLocation, "deploymentEmailAddresses");//This creates a document
+    private MongoClient databaseLocation = new MongoClient("localhost", 27017);//Address subject to change
+    private Datastore beforeLaunch = new Morphia().createDatastore(databaseLocation, "deploymentEmailAddresses");//This creates a document
 
     //This creates the collection using emailObjects.java to convert Java objects to mongo Json format
    public String storeEmailAddress(EmailObjects email) {
