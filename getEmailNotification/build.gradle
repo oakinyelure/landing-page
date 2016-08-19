@@ -2,6 +2,11 @@ group 'com.cti.getEmailNotification'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+run {
+   mainClassName 'com.cti.Routes'
+}
 
 sourceCompatibility = 1.8
 
