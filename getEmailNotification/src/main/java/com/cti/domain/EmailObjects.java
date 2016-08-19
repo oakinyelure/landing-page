@@ -11,7 +11,6 @@ import org.mongodb.morphia.annotations.Id;
 public class EmailObjects {
 
     @Id
-    private ObjectId id;
     private String email;
     private String fullName;
 
