@@ -24,7 +24,7 @@ $(function(){
                 $("#fullName").val("");
                 $("#email").val("");
                 setTimeout(function() {
-                					$("#successful").fadeOut("slow");}, 2000 );
+                $("#successful").fadeOut("slow");}, 2000 );
             },
 
             error: function(){
