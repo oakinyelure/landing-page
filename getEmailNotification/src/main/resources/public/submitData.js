@@ -32,7 +32,7 @@ $(function(){
                  $("#exclamationSign").addClass("glyphicon glyphicon-exclamation-sign");
                  $("#error").html("There was problem submitting your email. Please try Again Later");
                              setTimeout(function() {
-                               $('#error').fadeOut("slow");}, 2000 );
+                               $("#error").fadeOut("slow");}, 2000 );
             },
         });
         e.preventDefault();
