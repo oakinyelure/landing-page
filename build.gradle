@@ -1,12 +1,17 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'application'
+}
+
 group 'com.cti.getEmailNotification'
 version '1.0-SNAPSHOT'
-
-apply plugin: 'java'
-apply plugin: 'application'
-
-mainClassName = "com.cti.getEmailNotification"
-
 sourceCompatibility = 1.8
+
+run {
+    mainClassName = "com.cti.Routes"
+}
 
 repositories {
     mavenCentral()
