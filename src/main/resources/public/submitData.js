@@ -7,7 +7,7 @@ $(function(){
             var dat = {
                     fullName : $("#fullName").val(),
                     email : $("#email").val(),
-                }
+                };
              //end of data collection
 
            //Ajax to server data transfer took place here
