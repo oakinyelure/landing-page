@@ -1,13 +1,24 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+    }
+}
+
 plugins {
     id 'java'
     id 'eclipse'
     id 'idea'
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
 }
 
-group 'com.cti.getEmailNotification'
-version '1.0-SNAPSHOT'
+group 'com.campustradein'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version '1.0.0'
 
 run {
     mainClassName = "com.cti.App"
@@ -15,6 +26,10 @@ run {
 
 repositories {
     mavenCentral()
+}
+
+shadowJar {
+    classifier null
 }
 
 dependencies {
@@ -27,3 +42,4 @@ dependencies {
     compile 'org.mongodb.morphia:morphia:1.2.1'
     compile 'com.google.guava:guava:19.0'
 }
+apply plugin: 'checkstyle'
