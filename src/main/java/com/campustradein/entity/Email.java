@@ -1,4 +1,4 @@
-package com.cti.entity;
+package com.campustradein.entity;
 
 
 import org.bson.types.ObjectId;

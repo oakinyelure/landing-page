@@ -21,7 +21,7 @@ targetCompatibility = 1.8
 version '1.0.0'
 
 run {
-    mainClassName = "com.cti.App"
+    mainClassName = "com.campustradein.App"
 }
 
 repositories {
@@ -42,4 +42,3 @@ dependencies {
     compile 'org.mongodb.morphia:morphia:1.2.1'
     compile 'com.google.guava:guava:19.0'
 }
-apply plugin: 'checkstyle'

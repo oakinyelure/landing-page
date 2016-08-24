@@ -1,4 +1,4 @@
-package com.cti.util;
+package com.campustradein.util;
 
 import com.google.gson.Gson;
 import spark.ResponseTransformer;

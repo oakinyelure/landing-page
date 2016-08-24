@@ -1,18 +1,11 @@
-package com.cti;
+package com.campustradein;
 
-import com.cti.entity.Email;
-import com.cti.util.JsonUtil;
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
+import com.campustradein.entity.Email;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.mongodb.MongoClient;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
-
-import java.io.File;
-import java.io.StringWriter;
-import java.nio.charset.Charset;
 
 import static spark.Spark.*;
 
