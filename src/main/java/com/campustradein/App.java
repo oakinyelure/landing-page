@@ -17,13 +17,14 @@ public class App {
         String portNumber = System.getProperty("PORT");
         port(8080);
         if(portNumber != null) {
-            port(Integer.parseInt(portNumber));
+            port(Integer.parseInt(portNumber));//changes port to int
         }
-        staticFileLocation("/html");
+        staticFileLocation("/html");//filemarker
 
-        Controller appController = new Controller();
+        Controller appController = new Controller();//what does this do?
         appController.handleNewEmail();
-
+        
+        //logging
         exception(Exception.class, (e, request, response) -> {
             logger.error("An error occurred serving the request", e);
             logger.error("Request: {}", request.toString());
