@@ -14,7 +14,7 @@ import static spark.Spark.*;
  */
 public class Controller {
     private MongoClient mongoClient;
-    private Datastore datastore;
+    private Datastore dataStore;
     private Gson gson = new Gson();
 
     public Controller() {
@@ -22,7 +22,7 @@ public class Controller {
         mongoClient = new MongoClient("localhost", 27017);//Address subject to change
         Morphia morphia = new Morphia();
         morphia.mapPackage("com.cti.entity");
-        datastore = morphia.createDatastore(mongoClient, "early-adopters");
+        dataStore = morphia.createDatastore(mongoClient, "early-adopters");//document name is early-adopters
     }
 
     public void handleNewEmail() {
@@ -35,7 +35,7 @@ public class Controller {
             }
             Email email = new Email();
             email.setEmail(emailAddress);
-            datastore.save(email);
+            dataStore.save(email);
             response.status(200);
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("result", "ok");
