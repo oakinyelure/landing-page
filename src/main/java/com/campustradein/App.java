@@ -21,7 +21,7 @@ public class App {
         }
         staticFileLocation("/html");//filemarker
 
-        Controller appController = new Controller();//what does this do?
+        Controller appController = new Controller();
         appController.handleNewEmail();
         
         //logging
